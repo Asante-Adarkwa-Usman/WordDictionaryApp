@@ -6,7 +6,7 @@ The app is designed to demonstrate managing multiple Retrofit instances using Hi
 Users can swipe right ➡️ to fetch a new word and its meaning, and swipe left ⬅️ to view the previous word and meaning.
 
 ## 🎥 Demo
-<img src="assets/demo/appdemo.gif" width="300" height="650">
+<img src="assets/demo/demo.gif" width="300" height="650">
 
 ## 🚀 Features
 Fetch a random English word
