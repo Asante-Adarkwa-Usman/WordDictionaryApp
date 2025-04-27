@@ -1,7 +1,6 @@
 package com.ghost.worddictionaryapp.data.model
 
 
-import com.google.gson.annotations.SerializedName
 
 data class WordMeaningItemModel(
     val license: LicenseModel = LicenseModel(),

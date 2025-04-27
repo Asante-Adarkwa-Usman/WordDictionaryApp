@@ -20,7 +20,6 @@ class WordRepositoryImpl@Inject constructor(
         try {
             val response = randomWordApiService.getRandomWord()
             if (response.isSuccessful) {
-                Log.e("Word", "Random word received: ${response.body().toString()}")
                 emit(UiState.Success(response))
             } else {
                 emit(UiState.Error("Unable to fetch random word"))
@@ -38,10 +37,9 @@ class WordRepositoryImpl@Inject constructor(
         try {
             val response = wordMeaningApiService.getWordMeaning(word)
             if (response.isSuccessful) {
-                val body = response.body() // The body is expected to be a List of WordMeaningItemModel (WordMeaning)
+                val body = response.body()
                 if (!body.isNullOrEmpty()) {
-                    emit(UiState.Success(body))  // Emit the List of WordMeaningItemModel
-                    Log.e("Word Meaning", "Word meanings fetched successfully")
+                    emit(UiState.Success(body))
                 } else {
                     emit(UiState.Error("No word meanings found"))
                     Log.e("Word Meaning", "Empty response body")
