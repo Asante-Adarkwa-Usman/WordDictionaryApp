@@ -1,6 +1,9 @@
 # 📖 WordDictionaryApp
 
-This is a simple Android app built with Kotlin and Jetpack Compose. It uses the Random Word API and Free Dictionary API to fetch a random English word and display its meaning. The goal of this app is to show a card view with an English word and its definition, allowing users to swipe right for the next word and swipe left to view the previous word.
+This is a simple Android app built with Kotlin and Jetpack Compose. It uses the Random Word API and Free Dictionary API to fetch a random English word and display its meaning.
+The app is designed to demonstrate managing multiple Retrofit instances using Hilt with custom annotations.
+
+Users can swipe right ➡️ to fetch a new word and its meaning, and swipe left ⬅️ to view the previous word and meaning.
 
 ## 🎥 Demo
 <img src="assets/demo/appdemo.gif" width="300" height="650">
